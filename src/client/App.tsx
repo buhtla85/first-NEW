@@ -3,6 +3,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import {Home} from "./pages/Home";
 import {Bookings} from "./pages/Bookings";
 import {ContactUs} from "./pages/ContactUs";
+import {ErrorPage} from "./pages/ErrorPage";
 import {Route, Switch} from "react-router-dom";
 
 const App = (): JSX.Element => {
@@ -11,6 +12,7 @@ const App = (): JSX.Element => {
 			<Route exact path="/" component={Home}/>
 			<Route exact path="/bookings/" component={Bookings}/>
 			<Route exact path="/contact/" component={ContactUs}/>
+			<Route component={ErrorPage} />
 		</Switch>
 	);	
 }
