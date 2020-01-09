@@ -130,6 +130,12 @@
     background: url('https://cdn.pixabay.com/photo/2019/08/19/07/45/pets-4415649__340.jpg') no-repeat center center/cover;
 }
 
+@media screen and (max-width: 900px) {
+    .flex-container .flex-item-img {
+        display: none;
+    }
+}
+
 /* Remember to add media query for this section at 905px - items should be stacked on top of each other */
 
 /* Section Title 2 */ 
