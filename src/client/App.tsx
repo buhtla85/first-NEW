@@ -1,37 +1,29 @@
 import * as React from 'react';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+import {Home} from "./pages/Home";
+import {Bookings} from "./pages/Bookings";
+import {ContactUs} from "./pages/ContactUs";
+import {Route, Switch} from "react-router-dom";
 
-class App extends React.Component<IAppProps, IAppState> {
-	constructor(props: IAppProps) {
-		super(props);
-		this.state = {
-			name: null
-		};
-	}
-
-	async componentDidMount() {
-		try {
-			let r = await fetch('/api/hello');
-			let name = await r.json();
-			this.setState({ name });
-		} catch (error) {
-			console.log(error);
-		}
-	}
-
-	render() {
-		return (
-			<main>
-				<h1 className="customTextPrimary">Hello {this.state.name}!</h1>
-			</main>
-		);
-	}
-}
-
-export interface IAppProps {}
-
-export interface IAppState {
-	name: string;
+const App = (): JSX.Element => {
+	return (
+		<Switch>
+			<Route exact path="/" component={Home}/>
+			<Route exact path="/bookings/" component={Bookings}/>
+			<Route exact path="/contact/" component={ContactUs}/>
+		</Switch>
+	);	
 }
 
 export default App;
+
+
+// async componentDidMount() {
+// 	try {
+// 		let r = await fetch('/api/hello');
+// 		let name = await r.json();
+// 		this.setState({ name });
+// 	} catch (error) {
+// 		console.log(error);
+// 	}
+// }
