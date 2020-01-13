@@ -62,10 +62,10 @@ export const RoomForm = (props: IRoomProp): JSX.Element => {
                     <div className="col-auto">
                         <select className="custom-select mr-sm-2" onChange={props.changeSelected}>
                             <option>{props.singleRoom.dropDownText}</option>
-                            <option value="10">Single dog room</option>
-                            <option value="15">Two dogs room</option>
-                            <option value="18">Three dogs room </option>
-                            <option value="20">Four dogs room</option>
+                            <option value="1">Single dog room</option>
+                            <option value="2">Two dogs room</option>
+                            <option value="3">Three dogs room </option>
+                            <option value="4">Four dogs room</option>
                         </select>
                     </div>
                 </div>
