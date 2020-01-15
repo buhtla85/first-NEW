@@ -286,11 +286,11 @@ export default class Reservation extends React.Component <{}, IStateReservation>
                                     handleGrooming={this.isGroomingChecked(this.state.dogServicesPricing.groomPrice)(idx)} 
                                     handleAddingDogs={this.addNewDog(idx)} 
                                     handleRemovingDogs={this.removeDog(idx)}/>
-                                <button type="button" className="btn btn-outline-danger" onClick={this.removeRoom(idx)}>Remove Room</button>
+                                <button type="button" className="btn btn-outline-danger ml-3" onClick={this.removeRoom(idx)}>Remove Room</button>
                             </div>
                         )
                     })}
-                    <button type="button" className="btn btn-outline-success mt-1" onClick={this.addRoom}>Add New Room</button>
+                    <button type="button" className="btn btn-outline-success mt-1 ml-3" onClick={this.addRoom}>Add New Room</button>
                     <div className="container pt-2">
                         <div className="form-group">
                             <label htmlFor="ownerName">Owner's Name: </label>
