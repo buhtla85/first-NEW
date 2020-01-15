@@ -223,13 +223,28 @@
     background: #f2f2f2;
 }
 
-#map {
-    width: 100%;
-    height: 400px;
-}
-
 .flex-form {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Section Contacts */
+.contacts {
+    background: #333;
+}
+
+.contacts #green {
+    color: #4CAF50 !important;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contacts #override {
+        display: block;
+    }
+    .contacts #addPadding {
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
 }
