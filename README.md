@@ -9,7 +9,11 @@ A second take on my first React practice project, now with functioning implement
 ## Technologies: 
 ReactJS, Typescript, Bootstrap 4, Node.js, Express
 
-If you want to take a look, just clone the project or download a .zip file, and run the following command in the terminal: npm run dev.
+If you want to take a look, just clone the project or download a .zip file, and run the following command in the terminal: 
+```
+npm run dev
+
+```
 
 ## Important note: 
 Covalence boilerplate (https://github.com/covalence-io/barebones-react-typescript-express) was used for this project, so if you interested in additional info, be sure to check the link above.
